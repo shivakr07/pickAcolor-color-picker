@@ -1,0 +1,28 @@
+{
+
+    "name" : "Pick A Color",
+    "description" : "A color picker extension",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "background":{
+        "service_worker" : "background.js"
+    },
+    "permissions":[
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+
+    "options_page" : "options.html",
+
+
+    "action":{
+        "default_popup" : "popup.html"
+    },
+
+    "icons" : {
+        "32" : "/images/img32.png",
+        "64" : "/images/img64.png",
+        "128" : "/images/img128.png"
+    }
+}
